@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import appState from './store/app-state';
 import {Provider} from 'mobx-react';
-import {observer} from "mobx-react";
+// import {observer} from "mobx-react";
 import moment from 'moment';
 import Tab  from './my-comment/antd/Tab';
 
@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     const momentTime = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
     return (
-      <div className="App" appState={appState}>
+      <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
@@ -26,7 +26,9 @@ class App extends Component {
           <h2>
               antd(UI库)
           </h2>
-          <Tab></Tab>
+          <Provider  appState={appState}>
+              <Tab></Tab>
+          </Provider>
           <hr/>
           <div>
               {/*{this.props.appState.count}*/}
