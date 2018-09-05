@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Tabs } from 'antd';
 import {observer,inject} from 'mobx-react';
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 const TabPane = Tabs.TabPane;
 
 function callback(key) {

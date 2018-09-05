@@ -6,6 +6,7 @@ import {Provider} from 'mobx-react';
 // import {observer} from "mobx-react";
 import moment from 'moment';
 import Tab  from './my-comment/antd/Tab';
+import Cookie from './my-comment/cookie/cookie'
 
 class App extends Component {
   render() {
@@ -24,14 +25,15 @@ class App extends Component {
               moment:{momentTime}
           </div>
           <h2>
-              antd(UI库)
+              antd(UI库)+mobx使用实例
           </h2>
           <Provider  appState={appState}>
               <Tab></Tab>
           </Provider>
           <hr/>
+          <h2>Cookie使用实例</h2>
           <div>
-              {/*{this.props.appState.count}*/}
+              <Cookie></Cookie>
           </div>
       </div>
     );

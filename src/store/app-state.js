@@ -1,4 +1,4 @@
-import {observable,computed,autorun,action} from 'mobx';
+import {observable,computed,action} from 'mobx';
 
 class AppState {
     @observable count = 0;
