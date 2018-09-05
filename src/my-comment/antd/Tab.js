@@ -7,7 +7,6 @@ function callback(key) {
     console.log(key);
     alert(key);
 }
-
 class Tab extends Component {
     render() {
         return(
