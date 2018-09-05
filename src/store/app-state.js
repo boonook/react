@@ -9,6 +9,9 @@ class AppState {
     @action add(){
         this.count +=1
     }
+    @action changeName(name){
+        this.name =name
+    }
 }
 
 const appState = new AppState();

@@ -23,7 +23,7 @@ class Tab extends Component {
     }
 
     changeName(event){
-        this.props.appState.name = event.target.value;
+        this.props.appState.changeName(event.target.value);
     }
 
     render() {
