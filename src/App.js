@@ -9,6 +9,7 @@ import Cookie from './my-comment/cookie/cookie';
 import Routes from './router/Router';
 import PassValue from './my-comment/pass-value/PassValue';
 import ParentClick from './my-comment/parentClick/ParentClick';
+import Footer from './my-comment/request/Request';
 class App extends Component {
   render() {
     const momentTime = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
@@ -51,6 +52,13 @@ class App extends Component {
           </h2>
           <div>
               <ParentClick/>
+          </div>
+          <hr/>
+          <h2>
+              跨域请求
+          </h2>
+          <div>
+              <Footer/>
           </div>
       </div>
     );

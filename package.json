@@ -5,6 +5,7 @@
   "dependencies": {
     "antd": "^3.9.1",
     "autoprefixer": "7.1.6",
+    "axios": "^0.18.0",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
@@ -105,5 +106,11 @@
   "devDependencies": {
     "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "prop-types": "^15.6.2"
+  },
+  "proxy": {
+    "/app": {
+      "target": "http://open.douyucdn.cn",
+      "changeOrigin": true
+    }
   }
 }
