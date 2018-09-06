@@ -7,7 +7,8 @@ import moment from 'moment';
 import Tab  from './my-comment/antd/Tab';
 import Cookie from './my-comment/cookie/cookie';
 import Routes from './router/Router';
-import PassValue from './my-comment/pass-value/PassValue'
+import PassValue from './my-comment/pass-value/PassValue';
+import ParentClick from './my-comment/parentClick/ParentClick';
 class App extends Component {
   render() {
     const momentTime = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
@@ -44,6 +45,12 @@ class App extends Component {
           <h2>组件传值</h2>
           <div>
               <PassValue></PassValue>
+          </div>
+          <h2>
+              组件间的事件调用
+          </h2>
+          <div>
+              <ParentClick/>
           </div>
       </div>
     );
