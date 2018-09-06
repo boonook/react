@@ -6,7 +6,8 @@ import {Provider} from 'mobx-react';
 // import {observer} from "mobx-react";
 import moment from 'moment';
 import Tab  from './my-comment/antd/Tab';
-import Cookie from './my-comment/cookie/cookie'
+import Cookie from './my-comment/cookie/cookie';
+import Routes from './router/Router'
 
 class App extends Component {
   render() {
@@ -34,6 +35,11 @@ class App extends Component {
           <h2>Cookie使用实例</h2>
           <div>
               <Cookie></Cookie>
+          </div>
+          <hr/>
+          <h2>路由</h2>
+          <div>
+              <Routes></Routes>
           </div>
       </div>
     );
