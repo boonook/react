@@ -3,12 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 import appState from './store/app-state';
 import {Provider} from 'mobx-react';
-// import {observer} from "mobx-react";
 import moment from 'moment';
 import Tab  from './my-comment/antd/Tab';
 import Cookie from './my-comment/cookie/cookie';
-import Routes from './router/Router'
-
+import Routes from './router/Router';
+import PassValue from './my-comment/pass-value/PassValue'
 class App extends Component {
   render() {
     const momentTime = moment(new Date()).format('YYYY-MM-DD HH:mm:ss');
@@ -40,6 +39,11 @@ class App extends Component {
           <h2>路由</h2>
           <div>
               <Routes></Routes>
+          </div>
+          <hr/>
+          <h2>组件传值</h2>
+          <div>
+              <PassValue></PassValue>
           </div>
       </div>
     );
